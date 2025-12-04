@@ -1,0 +1,9 @@
+# Log started on 12/03/2025 [mm/dd/yyyy] at 08:17:28
+help
+HMassRepartition
+parm prmtop
+HMassRepartition
+outparm
+outparm prmtopx
+exit
+quit
