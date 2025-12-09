@@ -1,0 +1,14 @@
+export CUDA_VISIBLE_DEVICES=1
+cd /home/taisung/Data/CurrentProjects/MINT32/data/4096water
+./Run master
+rename 's/master/master\.RTX5000/' *master
+./Run mint
+rename 's/mint/mint\.RTX5000/' *mint
+
+cd /home/taisung/Data/CurrentProjects/MINT32/data/dhfr
+./Run master
+rename 's/master/master\.RTX5000/' *master
+./Run mint
+rename 's/mint/mint\.RTX5000/' *mint
+./Run mbond
+rename 's/mbond/mbond\.RTX5000/' *mbond

@@ -1,5 +1,4 @@
-grep Etot mdout.master | head -n -4 > xx
-grep Etot mdout.mint | head -n -4 > yy
-xmgrace -block xx -bxy 0:3 -block yy -bxy 0:3 
-##grep Etot mdout.claude | head -n -4 > zz
-##xmgrace -block xx -bxy 0:3 -block yy -bxy 0:3  -block zz -bxy 0:3
+grep Etot mdout.master.DPFP | head -n -4 > xx
+grep Etot mdout.master.$1 | head -n -4 > yy
+grep Etot mdout.mint.$1 | head -n -4 > zz
+xmgrace -block xx -bxy 0:3 -block yy -bxy 0:3  -block zz -bxy 0:3
