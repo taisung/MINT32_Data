@@ -1,0 +1,9 @@
+EXT=""
+if [ "$#" -gt "0" ]; then EXT=".$1" ; fi
+grep Etot mdout.master.DPFP | head -n -4 > xx
+grep Etot mdout.master$EXT | head -n -4 > yy
+grep Etot mdout.mint$EXT | head -n -4 > zz
+grep Etot mdout.mbond$EXT | head -n -4 > ww
+xmgrace -block xx -bxy 0:3 -block yy -bxy 0:3 -block zz -bxy 0:3 -block ww -bxy 0:3 
+#grep Etot mdout.shake.$1 | head -n -4 > aa
+#xmgrace -block xx -bxy 0:3 -block yy -bxy 0:3 -block zz -bxy 0:3 -block ww -bxy 0:3 -block aa -bxy 0:3 
